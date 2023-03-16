@@ -1,5 +1,5 @@
 # uni-uniui-ts
  
 ```
-npm install --legacy-peer-depa
+npm install --legacy-peer-deps
 ```
