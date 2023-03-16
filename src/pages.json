@@ -1,0 +1,124 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/group/group",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/template/template",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/createGroup/createGroup",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/userInfor/userInfor",
+			"style": {
+				"navigationBarTitleText": "用户基础信息",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/preStoreList/preStoreList",
+			"style": {
+				"navigationBarTitleText": "预留名单",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/createTemplate/createTemplate",
+			"style": {
+				"navigationBarTitleText": "创建模板",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/itemSelect/itemSelect",
+			"style": {
+				"navigationBarTitleText": "类型选择",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/searchGroup/searchGroup",
+			"style": {
+				"navigationBarTitleText": "搜索群组",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/groupDetail/groupDetail",
+			"style": {
+				"navigationBarTitleText": "群组详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/eventPage/eventPage",
+			"style": {
+				"navigationBarTitleText": "事件详情",
+				"enablePullDownRefresh": false
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"selectedColor": "#000",
+		"height": "60px",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/icon/home.png",
+				"selectedIconPath": "static/icon/home-b.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/template/template",
+				"iconPath": "static/icon/paper-plane.png",
+				"selectedIconPath": "static/icon/paper-plane-b.png",
+				"text": "我的模板"
+			},
+			{
+				"pagePath": "pages/group/group",
+				"iconPath": "static/icon/users-alt.png",
+				"selectedIconPath": "static/icon/users-alt-b.png",
+				"text": "我的群组"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"iconPath": "static/icon/user.png",
+				"selectedIconPath": "static/icon/user-b.png",
+				"text": "个人中心"
+			}
+		]
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		}
+	}
+}
