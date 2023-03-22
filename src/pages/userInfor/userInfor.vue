@@ -39,8 +39,8 @@
             </view>
         </view>
         <view class="item item-tip">
-            点击条目即可修改信息。
-            修改头像请点击按钮
+            <text>点击条目即可修改信息。</text>
+            <text>修改头像请点击按钮。</text>
         </view>
         <button class="edit-btn" open-type="chooseAvatar" @chooseavatar="onChooseAvatar">修改头像</button>
         <uni-popup ref="ppNick" type="dialog">
@@ -132,6 +132,8 @@ const onChooseAvatar = (e: any) => {
         background-color: transparent;
         box-shadow: none;
         font-size: 16px;
+        display: flex;
+        flex-direction: column;
     }
 }
 .edit-btn {

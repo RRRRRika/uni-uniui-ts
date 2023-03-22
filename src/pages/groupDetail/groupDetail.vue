@@ -2,6 +2,7 @@
     <view class="container">
         <view class="header">
             <text>{{ name }}</text>
+            <button type="primary" class="setting" @click="toConfig">设置</button>
         </view>
         <view class="member-list">
             <text class="member-list__title">成员列表</text>
@@ -45,6 +46,12 @@ const content: UniFabContent = [
     }
 ]
 
+const toConfig = () => {
+    uni.navigateTo({
+        url: '../groupConfig/groupConfig'
+    })
+}
+
 onLoad((payload) => {
     name.value = payload!.name;
 })
@@ -59,6 +66,16 @@ onLoad((payload) => {
     padding: 10px;
     font-size: 30px;
     font-weight: 600;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.setting {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
 }
 
 .member-list {

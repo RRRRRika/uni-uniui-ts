@@ -1,6 +1,12 @@
 {
 	"pages": [
 		{
+			"path": "pages/preEnter/preEnter",
+			"style": {
+				"navigationBarTitleText": "授权"
+			}
+		},
+		{
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "uni-app"
@@ -76,6 +82,12 @@
 			"path": "pages/eventPage/eventPage",
 			"style": {
 				"navigationBarTitleText": "事件详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/groupConfig/groupConfig",
+			"style": {
 				"enablePullDownRefresh": false
 			}
 		}
